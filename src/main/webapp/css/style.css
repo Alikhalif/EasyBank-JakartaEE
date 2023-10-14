@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+
+}
+.body_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; /* Adjust the background color */
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle effect */
+}
+
+.logo {
+    text-decoration: none;
+    color: #000000; /* Adjust the logo text color */
+    font-size: 24px; /* Adjust the font size of the logo */
+    font-weight: bold;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 20px; /* Adjust the spacing between links as needed */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000000; /* Adjust the link color */
+    font-size: 18px; /* Adjust the font size */
+}
+
+.nav-links li a:hover {
+    color: #ff6600;
+}
+
+.menu .burger {
+    cursor: pointer;
+}
+
+.hero__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background-color: #f0f0f0; /* Adjust the background color */
+}
+
+.text_content {
+    max-width: 600px; /* Adjust the max width */
+    margin: 20px;
+}
+
+.text_content h1 {
+    font-size: 36px; /* Adjust the font size */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text_content p {
+    font-size: 18px; /* Adjust the font size */
+    margin-bottom: 20px;
+}
+
+.b1 .cta-2 {
+    background-color: #ff6600; /* Adjust the button color */
+    color: #ffffff; /* Adjust the button text color */
+    padding: 15px 30px; /* Adjust the padding */
+    font-size: 16px; /* Adjust the font size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.b1 .cta-2:hover {
+    background-color: #ff8533; /* Adjust the button hover color */
+}
+
+.image__content img {
+    max-width: 100%; /* Make sure the image doesn't exceed its container */
+}
+
+.footer {
+    background-color: hsl(233, 26%, 24%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 3%;
+}
+
+.logo-social {
+    padding: 2rem;
+}
+
+.logo-social img {
+    cursor: pointer;
+}
+
+.socials {
+    padding-top: 2rem;
+    width: auto;
+}
+
+.socials img {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+
+.footer {
+    background-color: #1b1c1f;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.socials img {
+    margin-right: 10px;
+}
+
+.footer_links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer_links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_links ul li {
+    margin-bottom: 10px;
+}
+
+.footer_links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer_links ul li a:hover {
+    color: #ff8533; /* Adjust the link hover color */
+}
+
+.end_links {
+    display: flex;
+    align-items: center;
+}
+
+.cta-2 {
+    background-color: #ff6600; /* Adjust the button color */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-2:hover {
+    background-color: #ff8533; /* Adjust the button hover color */
+}
+
+
+
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.form {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background overlay */
+    z-index: 1;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    z-index: 2; /* Above the overlay */
+    width: 500px; /* Adjust the width as needed */
+}
+
+.popup h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.popup label,
+.popup input,
+.popup button {
+    display: block;
+    width: 100%;
+}
+
+.popup label {
+    font-weight: bold;
+    color: #555;
+}
+
+.popup input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Submit button styles */
+.popup button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.popup button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button#closeFormButton, button#closeUpdateFormButton {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+button#closeFormButton:hover,  button#closeUpdateFormButton:hover{
+    background-color: #999;
+}
+
+.current {
+    padding: 25px;
+    background-color: hsl(233, 26%, 24%);
+    border-radius: 5px;
+}
+/* Style the search form container */
+.search-form {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the search input container */
+.search-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style the search input */
+.search-input {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+/* Style the search button */
+.search-button {
+    padding: 10px 20px;
+    background-color: hsl(233, 26%, 24%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Hover and focus effects for the button */
+.search-button:hover, .search-button:focus {
+    background-color: #555;
+}
+
+/* Style the table title */
+.table-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+/* Style the "Add Client" button */
+.add-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Style table headers */
+th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style table rows */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Style the "Update" and "Delete" buttons */
+.update-button, .delete-button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.update-button:hover, .delete-button:hover {
+    background-color: #0056b3;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+
+
+/* Form and input styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.submit-button {
+    background-color: #5ec576;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #4bbb7d;
+}
+
+.search-container {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#employeeSearch {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    width: 100%;
+    max-width: 300px;
+    background-color: #f2f2f2;
+}
+
+.delete-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+.delete-modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+.delete-button-container {
+    margin-top: 20px;
+}
+
+.delete-modal-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.delete-modal-button:hover {
+    background-color: #0056b3;
+}
+
+.cancel-button {
+    background-color: #ccc;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-button {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.update-button {
+    background-color: #4f66d9;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
